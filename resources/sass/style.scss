@@ -1,0 +1,259 @@
+
+.setting-page .profile-image img {
+    border: 1px solid #ccc;
+    border-radius: 1.0rem;
+}
+
+
+.setting-page .profile-image{
+    position: relative;
+}
+.setting-page .profile-image .remove-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.b-header .page-name {
+    font-size: 22px;
+}
+
+.b-header .mdi-menu {
+    font-size: 24px;
+    padding-right: 7px;
+}
+
+.b-header .sourcing-image {
+    width: 25px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 3px 0px #00000029;
+}
+
+.b-header .shadow-on-hover {
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.b-header .shadow-on-hover:hover {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1),
+    0 0.25rem 0.25rem rgba(0, 0, 0, 0.1);
+}
+
+.b-header .notification-bell {
+    position: relative;
+}
+
+.b-header .notification-bell .bell {
+    font-size: 24px;
+}
+
+.b-header .notification-bell .bell-count {
+    position: absolute;
+    left: 16px;
+    top: 2px;
+}
+
+.b-header .notification-bell .notifications {
+    position: absolute;
+    right: 0;
+    left: auto;
+    width: 400px;
+    border: 1px solid #aaa;
+    background: #fff;
+    z-index: 2;
+    border-radius: 0.8rem;
+    word-break: break-word;
+    height: 300px;
+    overflow-y: auto;
+    display: none;
+    font-size: 0.75rem;
+}
+
+.nav-link i {
+    vertical-align: middle;
+}
+
+.nav-link .mdi-3px {
+    font-size: 3px;
+}
+
+.col-2 .mdi-16px {
+    font-size: 16px;
+}
+
+.nav-link .text-grey {
+    color: #999;
+}
+
+.bell-animation {
+    display: inline-block;
+    animation: ring 7.5s ease-in-out infinite;
+    transform-origin: 50% 4px;
+}
+
+@keyframes ring {
+    0% {
+        transform: rotate(0);
+    }
+
+    1% {
+        transform: rotate(30deg);
+    }
+
+    3% {
+        transform: rotate(-28deg);
+    }
+
+    5% {
+        transform: rotate(34deg);
+    }
+
+    7% {
+        transform: rotate(-32deg);
+    }
+
+    9% {
+        transform: rotate(30deg);
+    }
+
+    11% {
+        transform: rotate(-28deg);
+    }
+
+    13% {
+        transform: rotate(26deg);
+    }
+
+    15% {
+        transform: rotate(-24deg);
+    }
+
+    17% {
+        transform: rotate(22deg);
+    }
+
+    19% {
+        transform: rotate(-20deg);
+    }
+
+    21% {
+        transform: rotate(18deg);
+    }
+
+    23% {
+        transform: rotate(-16deg);
+    }
+
+    25% {
+        transform: rotate(14deg);
+    }
+
+    27% {
+        transform: rotate(-12deg);
+    }
+
+    29% {
+        transform: rotate(10deg);
+    }
+
+    31% {
+        transform: rotate(-8deg);
+    }
+
+    33% {
+        transform: rotate(6deg);
+    }
+
+    35% {
+        transform: rotate(-4deg);
+    }
+
+    37% {
+        transform: rotate(2deg);
+    }
+
+    39% {
+        transform: rotate(-1deg);
+    }
+
+    41% {
+        transform: rotate(1deg);
+    }
+
+    43% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .b-header .notification-bell .notifications {
+        width: 300px;
+        left: -270px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .b-header .notification-bell .notifications {
+        width: 300px;
+        left: -270px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .b-header .notification-bell .notifications {
+        width: 250px;
+        left: -220px;
+    }
+}
+
+/*Neeraj*/
+
+
+
+
+.userStatusForm {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+
+}
+.userStatusForm:focus {
+    outline: none;
+}
+.userStatusForm .form-control {
+    border: none;
+}
+.userStatusForm .form-control:focus {
+    box-shadow: none;
+}
+.userStatusForm input {
+    height: 36px;
+    border-top-left-radius: $border-radius !important;
+    border: 1px solid $border-color !important;
+}
+.userStatusForm button {
+    border-radius:0 !important;
+    border-top-right-radius: $border-radius !important;
+    border-bottom-right-radius: $border-radius !important;
+    height: 36px;
+    color: #fff;
+    margin: -1px;
+
+    width: 100px;
+    text-transform: uppercase;
+    position: relative;
+    transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+}
+
+.userStatusForm .input-group-btn:last-child > .btn, .userStatusForm .input-group-btn:last-child > .btn-group {
+    z-index: 2;
+    margin-left: 0px;
+}

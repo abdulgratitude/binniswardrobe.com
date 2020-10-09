@@ -1,0 +1,600 @@
+#error-404 {
+
+    position: absolute;
+    top: 30%;
+    left: 80px;
+
+    .content{
+        padding-top: 20px;
+    }
+
+    .title  h1 {
+
+        font-size:65px;
+        font-family: sans-serif;
+        font-weight: 600;
+    }
+
+    .line p{
+
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        color: #666666;
+
+    }
+
+    .links_title p{
+
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        color:#333333;
+        font-weight:bold;
+    }
+    .links p a{
+
+    padding: 0px 20px 0px 20px;
+    color:#4891FF;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    }
+}
+
+@media (max-width: 450px) and (min-width: 320px) {
+
+
+    #error-404 {
+
+        position: absolute;
+        top: 25%;
+        left: 0px;
+
+
+        .title  h1 {
+
+            font-size:30px;
+            font-family: sans-serif;
+            font-weight: 600;
+        }
+
+        .line p{
+
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            color: #666666;
+
+        }
+
+        .links_title p{
+
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            color:#333333;
+
+        }
+        .links p a{
+
+            padding: 0px 5px 0px 5px;
+            color:#4891FF;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+        }
+
+        .image{
+            padding: 30px;
+
+        }
+        .image .pic{
+            width:200px;
+        }
+    }
+
+
+}
+
+@media (max-width: 720px) and (min-width: 451px) {
+    #error-404 {
+
+        position: absolute;
+        top: 25%;
+        left: 25px;
+
+        .content{
+            padding-top: 20px;
+        }
+
+        .title  h1 {
+
+            font-size:45px;
+            font-family: sans-serif;
+            font-weight: 600;
+        }
+
+        .line p{
+
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            color: #666666;
+
+        }
+
+        .links_title p{
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            color:#333333;
+            font-weight:bold;
+        }
+        .links p a{
+
+            padding: 0px 10px 0px 10px;
+            color:#4891FF;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        .image{
+            padding: 30px;
+
+        }
+        .image .pic{
+            width:200px;
+        }
+
+    }
+
+    #error-419 {
+
+        position: absolute;
+        top: 35%;
+        left: 50px;
+
+        .content{
+            padding-top: 40px;
+        }
+
+        .title  h1 {
+
+            font-size:65px;
+            font-family: sans-serif;
+            font-weight: 600;
+        }
+
+        .line p{
+
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            color: #666666;
+
+        }
+
+        .links_title p a{
+            color:#4891FF;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            //color:#333333;
+            font-weight:bold;
+        }
+
+    }
+}
+
+@media (max-width: 1025px) and (min-width: 720px) {
+    #error-404 {
+
+        position: absolute;
+        top: 35%;
+        left: 25px;
+
+        .content{
+            padding-top: 20px;
+        }
+
+        .title  h1 {
+
+            font-size:45px;
+            font-family: sans-serif;
+            font-weight: 600;
+        }
+
+        .line p{
+
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            color: #666666;
+
+        }
+
+        .links_title p{
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            color:#333333;
+            font-weight:bold;
+        }
+        .links p a{
+
+            padding: 0px 10px 0px 10px;
+            color:#4891FF;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+    }
+
+    #error-419 {
+
+        position: absolute;
+        top: 35%;
+        left: 50px;
+
+        .content{
+            padding-top: 40px;
+        }
+
+        .title  h1 {
+
+            font-size:65px;
+            font-family: sans-serif;
+            font-weight: 600;
+        }
+
+        .line p{
+
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            color: #666666;
+
+        }
+
+        .links_title p a{
+            color:#4891FF;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            //color:#333333;
+            font-weight:bold;
+        }
+
+    }
+}
+
+
+//Error 419
+
+#error-419 {
+
+    position: absolute;
+    top: 30%;
+    left: 80px;
+
+    .content{
+        padding-top: 40px;
+    }
+
+    .title  h1 {
+
+        font-size:65px;
+        font-family: sans-serif;
+        font-weight: 600;
+    }
+
+    .line p{
+
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        color: #666666;
+
+    }
+
+    .links_title p a{
+        color:#4891FF;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width: 450px) and (min-width: 320px) {
+    #error-419 {
+
+        position: absolute;
+        top: 20%;
+        left: 0px;
+
+        .content{
+            padding-top: 0px;
+        }
+
+        .title  h1 {
+
+            font-size:40px;
+            font-family: sans-serif;
+            font-weight: 600;
+        }
+
+        .line p{
+
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            color: #666666;
+
+        }
+
+        .links_title p a{
+            color:#4891FF;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+
+        }
+
+        .image .pic{
+            width:300px;
+        }
+
+    }
+}
+
+@media (max-width: 720px) and (min-width: 451px) {
+    #error-419 {
+
+        position: absolute;
+        top: 25%;
+        left: 20px;
+
+        .content{
+            padding-top: 0px;
+        }
+
+        .title  h1 {
+
+            font-size:50px;
+            font-family: sans-serif;
+            font-weight: 600;
+        }
+
+        .line p{
+
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            color: #666666;
+
+        }
+
+        .links_title p a{
+            color:#4891FF;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+
+        }
+
+        .image .pic{
+            width:400px;
+        }
+
+    }
+}
+
+@media (max-width: 1025px) and (min-width: 720px){
+    #error-419 {
+
+        position: absolute;
+        top: 25%;
+        left: 10px;
+
+        .content{
+            padding-top: 30px;
+        }
+
+        .title  h1 {
+
+            font-size:60px;
+            font-family: sans-serif;
+            font-weight: 600;
+        }
+
+        .line p{
+
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            color: #666666;
+
+        }
+
+        .links_title p a{
+            color:#4891FF;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+
+        }
+
+        /* .image .pic{
+            width:400px;
+        } */
+
+    }
+}
+
+//Error 500
+#error-500 {
+
+    position: absolute;
+    top: 30%;
+    left: 80px;
+
+    .content{
+        padding-top: 40px;
+    }
+
+    .title  h1 {
+
+        font-size:65px;
+        font-family: sans-serif;
+        font-weight: 600;
+    }
+
+    .line p{
+
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        color: #666666;
+
+    }
+
+    .links_title p a{
+        color:#4891FF;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+}
+
+
+@media (max-width: 450px) and (min-width: 320px) {
+    #error-500 {
+
+        position: absolute;
+        top: 20%;
+        left: 0px;
+
+        .content{
+            padding-top: 20px;
+        }
+
+        .title  h1 {
+            font-size:40px;
+            font-family: sans-serif;
+            font-weight: 600;
+        }
+
+        .line p{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            color: #666666;
+
+        }
+
+        .links_title p a{
+            color:#4891FF;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+
+        }
+
+        .image .pic{
+            width:300px;
+        }
+
+    }
+}
+
+@media (max-width: 720px) and (min-width: 451px) {
+    #error-500 {
+
+        position: absolute;
+        top: 25%;
+        left: 20px;
+
+        .content{
+            padding-top: 20px;
+        }
+
+        .title  h1 {
+
+            font-size:45px;
+            font-family: sans-serif;
+            font-weight: 600;
+        }
+
+        .line p{
+
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            color: #666666;
+
+        }
+
+        .links_title p a{
+            color:#4891FF;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+
+        }
+
+        .image .pic{
+            width:400px;
+        }
+
+    }
+}
+
+@media (max-width: 1025px) and (min-width: 720px){
+    #error-500 {
+
+        position: absolute;
+        top: 20%;
+        left: 50px;
+
+        .content{
+            position: relative;
+            left: 45px;
+            padding-top: 20px;
+        }
+
+        .title  h1 {
+            font-size:60px;
+            font-family: sans-serif;
+            font-weight: 600;
+        }
+
+        .line p{
+
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            color: #666666;
+
+        }
+
+        .links_title p a{
+            color:#4891FF;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+
+        }
+
+        .image .pic{
+            //width:400px;
+            position: relative;
+            right: 40px;
+        }
+
+    }
+}

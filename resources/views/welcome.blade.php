@@ -1,100 +1,77 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.app')
 
-        <title>Laravel</title>
+@section('content')
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#createContinentalModal" >Continent Master</button>
+    <button type="button" class="btn btn-secondary" ro>Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-warning">  <i class="mdi mdi-tag" aria-hidden="true"></i>Warning</button>
+    <button type="button" class="btn btn-info">  <i class="mdi mdi-tag" aria-hidden="true"></i>Info</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <button type="button" class="btn btn-dark">  <i class="mdi mdi-tag" aria-hidden="true"></i>Dark</button>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+    <button type="button" class="btn btn-link">Link</button>
+    <select class="selectpicker">
+        <option>Mustard</option>
+        <option>Ketchup</option>
+        <option>Barbecue</option>
+    </select>
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
 
-            .full-height {
-                height: 100vh;
-            }
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Launch demo modal
+    </button>
 
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
+    <a href="http://127.0.0.1:8000/master/continental"><button type="button" class="btn btn-primary float-right">Continental</button></a>
+    <!-- Modal -->
+    @component('layouts.components.modal', [
+    'id' => 'createContinentalModal',
+    'size'=>'model-sm',
+    'title' => 'Create Continent',
+    'body' => 'locality.create_continental',
+    'submitBtn' => 'Create',
+    'closeBtn' => 'Close',
+    'footer'=> 'true'
+    ])
+    @endcomponent
 
-            .position-ref {
-                position: relative;
-            }
 
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
 
-            .content {
-                text-align: center;
-            }
 
-            .title {
-                font-size: 84px;
-            }
+    @endsection
 
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
+@section('script')
+    <script>
 
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
+        $('#createForm').on('submit', function (e) {
+            e.preventDefault();
+            let form = $(this);
+            let url = form.attr('action');
+            let data = $(this).serialize();
+            loaderBtn(true, '#CreateTown');
+            axios.post(url, data)
+                .then(function (response) {
+                    loaderBtn(false, '#CreateTown');
+                    if (response.data.status == true) {
+                        toastr.success(response.data.message);
+                        show('form#filterForm');
+                        $('#createTownModal').modal('hide');
+                    }
+                    if(response.data.error) {
+                        toastr.error(response.data.error)
+                    }
+                    if(response.data.status == false) {
+                        toastr.error(response.data.message)
+                    }
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
+                })
+                .catch(function (error) {
+                    toastr.error(error)
+                });
 
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
+        });
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
-        </div>
-    </body>
-</html>
+    </script>
+
+@endsection

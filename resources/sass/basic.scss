@@ -1,0 +1,52 @@
+.card-basic.card {
+    .card-header {
+        background: #fff ;
+        .image-icon{
+            margin-right: 7px;
+            position: relative;
+        }
+
+        .image-icon img{
+            height: 20px;
+        }
+    }
+
+    .card-body {
+        label {
+            margin-bottom: 0rem;
+        }
+    }
+
+
+    transition: all .3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.card-deleted-bg-color {
+    background-color: #ffdfdf !important;
+}
+
+
+.card-filter-basic.card {
+    .card-header {
+        background: #fff !important;
+    }
+
+    transition: all .3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.filter-form .filter-message {
+    transition: all .3s cubic-bezier(.25, .8, .25, 1);
+}
+
+
+.card-filter-basic.card:hover,
+.card-basic.card:hover {
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .10), 0 .25rem .25rem rgba(0, 0, 0, .10);
+}
+
+
+
+
+.filter-form .filter-message:hover {
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .10), 0 .25rem .25rem rgba(0, 0, 0, .10);
+}

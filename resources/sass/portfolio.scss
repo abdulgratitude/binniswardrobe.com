@@ -1,0 +1,25 @@
+#portfolio-container {
+    .col-height-calc {
+        height: 100% - 14%;
+    }
+
+    .portfolio-logo {
+        object-fit: cover;
+    }
+
+    .portfolio-profile {
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    .portfolio-number {
+        font-size: 1.15rem;
+        color: #666;
+    }
+
+    .portfolio-category {
+        font-size: 0.95rem;
+        color: #aaa;
+        font-weight: 600;
+    }
+}

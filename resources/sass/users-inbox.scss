@@ -1,0 +1,201 @@
+#inbox-page-design{
+
+    .content-wrapper{
+        padding: 115px 40px;
+    }
+
+    @media (max-width: 768px) {
+        .content-wrapper {
+            padding: 115px 13px;
+        }
+    }
+
+    .nav-tabs {
+         border-bottom: none;
+    }
+
+    .inbox-tab-wrapper .nav-tabs .nav-link {
+
+
+        color: #000;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 11px 39px;
+        border-radius: 5px;
+    }
+
+    .inbox-tab-wrapper .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+        background: #E33D47;
+        border-radius: 5px;
+        font-size: 16px;
+        line-height: 24px;
+        color: #fff;
+        font-weight: 600;
+
+    }
+    .inbox-tab-wrapper .nav-tabs .nav-link:hover, .inbox-tab-wrapper .nav-tabs .nav-link:focus {
+        background: #E33D47;
+        color: #fff;
+
+    }
+
+    .tab-content{
+        padding: 25px 0;
+    }
+
+    /* Inbox-accordion */
+    .inb-acc-header{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        /* background: #FFFFFF; */
+        border-bottom: 1px solid #EEEEEE;
+        box-sizing: border-box;
+        /* border-radius: $border-radius; */
+        padding: 0.75rem 1.25rem;
+        flex-wrap: wrap;
+    }
+
+    .inb-acc-header .left{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .inb-acc-header .left .profile-icon{
+        width: 30px;
+        height: 30px;
+        background: #F2F7FC;
+        border-radius: 50%;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .inb-acc-header .left .profile-icon img{
+        width: 100%;
+        height: 100%;
+    }
+    .inb-acc-header .left h4{
+        font-weight: 600;
+        font-size: 16px;
+        color: #000000;
+        margin: 0;
+        padding: 0;
+        text-transform: capitalize;
+    }
+
+    .inb-acc-header .right .date-badge{
+        background: #95F1C9;
+        border-radius: 50px;
+        font-size: 13px;
+        color: #333333;
+        padding: 10px 22px;
+    }
+
+    .btn-collapse{
+        outline: 0 !important;
+        background: transparent;
+        border: none;
+    }
+    .inb-acc-body{
+        background: #ffffff;
+        border-radius: $border-radius;
+        padding: 30px 33px;
+    }
+
+    .inb-acc-body .info-stat {
+        display: grid;
+        grid-gap: 40px 15px;
+        grid-template-columns: repeat(auto-fit, minmax(210px, auto));
+        justify-content: center;
+    }
+    .inb-acc-body .info-stat .item-stat p{
+        font-size: 14px;
+        line-height: 8px;
+        color: #666666;
+
+    }
+    .inb-acc-body .info-stat .item-stat h4{
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 24px;
+        color: #333333;
+    }
+
+    .table-wrapper{
+        margin: 57px 0 0 0;
+        border: 1px solid #CCCCCC;
+        border-radius: $border-radius;
+        background: #ffffff;
+    }
+
+    .table-wrapper .table-header{
+        background: #ffffff;
+        /* border: 1px solid #CCCCCC; */
+        box-sizing: border-box;
+        border-radius: $border-radius;
+        padding: 20px 24px;
+    }
+
+    .table-wrapper .table-header h4{
+        font-weight: 600;
+        font-size: 16px;
+        /* line-height: 0; */
+        color: #333333;
+        margin: 0;
+        padding: 0;
+    }
+
+    .badge-neutral{
+        background: #D6D6D6;
+        border-radius: 50px;
+        padding: 7px 26px;
+        font-size: 12px;
+        line-height: 18px;
+        color: #333333;
+        display: inline-block;
+        margin: 5px 7px;
+    }
+
+    .badge-facebook{
+        background: #3B5998;;
+        border-radius: 50px;
+        padding: 7px 26px;
+        font-size: 12px;
+        line-height: 18px;
+        display: inline-block;
+        margin: 5px 7px;
+        color: #fff;
+    }
+    .badge-confirm{
+        background: #4DBB4B;
+        border-radius: 50px;
+        padding: 7px 26px;
+        font-size: 12px;
+        line-height: 18px;
+        display: inline-block;
+        margin: 5px 7px;
+        color: #fff;
+    }
+
+    @media (max-width: 768px){
+        .inb-acc-header .left, .inb-acc-header .right {
+            margin: 6px 0;
+        }
+        .inb-acc-header {
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+        .inb-acc-header .left {
+            flex-wrap: unset;
+            justify-content: unset;
+            align-items: unset;
+        }
+
+    }
+
+}

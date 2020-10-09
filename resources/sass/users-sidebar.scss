@@ -1,0 +1,116 @@
+.b-sidebar {
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    background: #fff;
+    transition: ease-in-out .2s;
+    width: 13.75rem;
+}
+
+.b-sidebar a {
+    color: #333;
+}
+
+.b-sidebar .header-profile,
+.b-sidebar .footer-logout,
+.b-sidebar .href-item,{
+padding: 0.8rem 1rem;
+}
+
+.b-sidebar .profile-image {
+    width: 35px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,.16);
+    position: relative;
+}
+
+.b-sidebar .header-profile {
+    border-bottom: 1px solid $primary;
+    height: 67px;
+    max-height: 62px;
+    background-color: #E33D47;
+    border-color: #E33D47;
+    color: #fff;
+}
+
+.b-sidebar .footer-logout{
+
+}
+
+#main.active {
+    margin-left: 13.75rem;
+}
+
+#b-sidebar .cursor-pointer {
+    cursor: pointer;
+}
+
+#b-sidebar.deactive {
+    -webkit-transform: translate(-13.75rem, 0);
+    -moz-transform: translate(-13.75rem, 0);
+    -o-transform: translate(-13.75rem, 0);
+    -ms-transform: translate(-13.75rem, 0);
+    transform: translate(-13.75rem, 0);
+}
+
+@media screen and (max-width: 45rem) {
+    .b-sidebar.active {
+        -webkit-transform: translate(0, 0);
+        -moz-transform: translate(0, 0);
+        -o-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+
+    #main.active {
+        margin-left: 0;
+        position: relative;
+        left: 13.75rem;
+    }
+
+    #b-sidebar.deactive {
+        -webkit-transform: translate(-13.75rem, 0);
+        -moz-transform: translate(-13.75rem, 0);
+        -o-transform: translate(-13.75rem, 0);
+        -ms-transform: translate(-13.75rem, 0);
+        transform: translate(-13.75rem, 0);
+    }
+
+    #main.deactive {
+        -webkit-transform: translate(0, 0);
+        -moz-transform: translate(0, 0);
+        -o-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        transform: translate(0, 0);
+        width: 100%;
+    }
+}
+
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+a{  text-decoration: none!important;}
+.sideBar_menu_item {
+    font-size: 16px;
+    width: 200px;
+    line-height: 19px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+
+.sideBar_menu_item .dropdown-item{
+    color: #666;
+}
+.sideBar-list-icon{
+    color:#bfbfbf
+}
+
+
+
+

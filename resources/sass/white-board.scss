@@ -1,0 +1,46 @@
+.white-board {
+    &.screen-curve-bg {
+        background: url("/images/white-board-bg.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .board {
+        &.white-board-width {
+            max-width: 600px;
+            margin: 0 auto;
+
+            p,
+            small {
+                color: #999;
+            }
+
+            h5 {
+                font-size: 1.2rem;
+            }
+
+            .white-board-object-fit {
+                object-fit: cover;
+            }
+
+            .slide-animation {
+                transform: translateX(0);
+                animation: whiteBoard 0.5s ease-in-out;
+                opacity: 1;
+            }
+
+            @keyframes whiteBoard {
+                from {
+                    transform: translateX(50px);
+                    opacity: 0;
+                }
+
+                to {
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

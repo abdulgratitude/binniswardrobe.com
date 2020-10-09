@@ -1,1 +1,228 @@
-//
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// material design icons
+@import '~@mdi/font/scss/materialdesignicons';
+
+// Bootstrap select
+@import '~bootstrap-select/sass/bootstrap-select';
+
+// toastr
+@import '~toastr/toastr';
+
+
+body {
+    height: 100vh;
+    background: #F7F7FC;
+}
+
+form {
+    margin: 0px;
+}
+
+
+li.disabled.selected .bs-ok-default:after{
+    display: none;
+}
+
+/* App-loader CSS */
+
+.app-loader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    opacity: 1;
+    background: url('/images/app-loader.svg') 50% 50% no-repeat rgb(249, 249, 249);
+}
+
+
+/* Scroll Height & Width */
+
+::-webkit-scrollbar {
+    height: .25rem;
+    width: .25rem;
+}
+
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #dadce0;
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #dadce0;
+    border-radius: .5rem;
+}
+
+
+
+.form-group>label {
+    margin-bottom: 0;
+}
+
+
+/** Toastr Styling **/
+
+#toast-container>div {
+    padding: .9375rem;
+    border-radius: $border-radius;
+}
+
+.toast {
+    background: #1b1e21;
+}
+
+#toast-container>.toast-info,
+#toast-container>.toast-success,
+#toast-container>.toast-error,
+#toast-container>.toast-warning {
+    background-image: none !important;
+}
+
+#toast-container>div {
+    -moz-box-shadow: 0 0 .75rem #6666;
+    -webkit-box-shadow: 0 0 .75rem #6666;
+    box-shadow: 0 0 .75rem #6666;
+}
+
+#toast-container>.toast-info,
+#toast-container>.toast-warning {
+    background: #1b1e21;
+}
+
+#toast-container>.toast-success {
+    background: #0f6e37;
+}
+
+#toast-container>.toast-error {
+    background: #820909;
+}
+
+/** Card **/
+.card-header {
+    border-bottom: 0px;
+    border-bottom-left-radius: $border-radius !important;
+    border-bottom-right-radius: $border-radius !important;
+    border-top-left-radius: $border-radius !important;
+    border-top-right-radius: $border-radius !important;
+}
+
+
+/** filter **/
+.filter-form{
+    .filter-message {
+        cursor: pointer;
+        font-size: 12px;
+        word-break: break-word;
+        padding: 5px 10px;
+        border-radius: $border-radius;
+        display: inline-block;
+    }
+}
+
+/** mdi **/
+.mdi-16{
+    font-size: 16px;
+}
+
+.bs-tooltip-bottom {
+    .arrow::before,
+    .bs-tooltip-auto[x-placement^=bottom] .arrow::before {
+        border-width: 0;
+    }
+}
+
+.bs-tooltip-top {
+    .arrow::before,
+    .bs-tooltip-auto[x-placement^=top] .arrow::before {
+        border-width: 0;
+    }
+}
+
+
+.mdi-set,
+.mdi:before {
+    line-height: initial;
+    vertical-align: initial;
+}
+
+.addbg{
+    background-color: gray;
+    padding-top:5px ;
+    height: 35px;
+    width: 30px;
+}
+/** modal **/
+.modal {
+    .modal-header {
+        border-bottom: none;
+
+        .mdi-close {
+            font-size: 1.375rem;
+        }
+    }
+
+    .modal-footer {
+        border-top: none;
+    }
+}
+
+
+
+.shadow-1 {
+    box-shadow: 0 .1875rem .375rem rgba(0, 0, 0, .16), 0 .1875rem .375rem rgba(0, 0, 0, .23);
+    transition: all .3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.shadow-1:hover {
+    box-shadow: 0 .875rem 1.75rem rgba(0, 0, 0, .25), 0 .625rem .625rem rgba(0, 0, 0, .22);
+}
+
+.shadow-2 {
+    transition: all .3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.shadow-2:hover {
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .10), 0 .25rem .25rem rgba(0, 0, 0, .10);
+}
+
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+
+/*** bootstrap-select ***/
+
+.bootstrap-select .bs-ok-default:after {
+    border-width: 0 1.5px 1.5px 0;
+    color: #868686;
+}
+
+.bootstrap-select .btn-light {
+    background: none;
+}
+
+
+
+@import "header";
+@import "style-001";
+@import 'signup';
+@import "users-sidebar";
+@import "users-inbox";
+@import "login-modal";
+@import "basic";
+@import "view_recruiter_after_login";
+@import "modules/company-remark";

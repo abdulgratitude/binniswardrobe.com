@@ -1,0 +1,219 @@
+#login-modal{
+    .modal{
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    //.header-wrapper{
+    //    padding: 50px;
+    //}
+    .modal-header{
+        border: 0;
+        padding: 0;
+        justify-content: center;
+        text-align: center;
+        margin-top: -27px;
+        margin-bottom: 30px;
+    }
+    .modal-header h3{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .socialBtn{
+        justify-content: center;
+    }
+    .closeBtn {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        color: #ccc;
+        font-size: 30px;
+        margin: 0 5px 0 0;
+        cursor: pointer;
+    }
+
+    .closeBtn:hover,
+    .closeBtn:focus {
+        color: #333;
+        text-decoration: none;
+
+    }
+    .modal-content{;
+        margin: 50px auto auto auto;
+        width: 85vw;
+        box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+        animation-name: modalOpen;
+        animation-duration: 1s;
+    }
+
+    .buttons a{
+        display: inline-block;
+        padding: 5px;
+        width: 100px;
+        border-radius: 5px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .fbk a{
+        background-color: #3B5998;
+        color: #fff;
+    }
+    .fbk{
+        margin-right: 10px !important;
+    }
+
+    .google a{
+        background-color: #ffffff;
+        color: #333333;
+        border: 1px solid #EEEEEE;
+    }
+    .google img{
+        width: 20px;
+    }
+
+    .separator{
+        align-items: center;
+        margin: 14px 5px -3px 15px;
+    }
+    .stick{
+        background-color: #cecece;
+        width: 50%;
+        height: 1px;
+    }
+    .or{
+        flex: 0;
+        padding: 20px 10px;
+        color: gray;
+    }
+    .modal-body{
+        padding: 10px 20px;
+    }
+    .form-group input{
+        padding: 20px;
+    }
+    #btn-save {
+        background-color: #E33D47;
+        padding: 11px 60px;
+        border-radius: 5px;
+        font-size: 16px;
+
+    }
+
+    .modal-footer{
+        text-align: center;
+        justify-content: center;
+        border: 0;
+        margin: 0!important;
+    }
+    .footer a{
+        text-decoration: underline !important;
+        color: #666;
+    }
+    .footer.f-got{
+
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .f-got a{
+        text-align: center;
+        //margin-left: 120px;
+    }
+    .footer.reg{
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    @keyframes modalOpen {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    /* Meduim Screen*/
+    @media screen and (min-width: 600px) and (max-width:768px) {
+        //.header-wrapper{
+        //    padding: 20px;
+        //}
+        .modal-header{
+            //font-weight: bold;
+        }
+        .socialBtn{
+            justify-content: space-around;
+        }
+        .closeBtn {
+            top: 15px;
+            right: 30px;
+        }
+        .modal-content{;
+            margin: 200px auto;
+            width: 70vw;
+            padding: 20px;
+        }
+        .buttons a{
+            padding: 10px;
+            width: 200px;
+            font-size: 16px!important;
+        }
+
+        .modal-body{
+            padding: 1rem 3rem 0 3rem;
+        }
+        .form-group input{
+            padding: 25px;
+        }
+        .f-got a{
+            //margin-left: 300px;
+        }
+        .reg a{
+
+        }
+    }
+
+    /* LARGE SCREEN */
+    @media (min-width: 769px) {
+        //.header-wrapper{
+        //    padding: 20px;
+        //}
+        .modal-header{
+            font-weight: bold;
+        }
+        .socialBtn{
+            justify-content: space-around;
+        }
+        .closeBtn {
+            top: 15px;
+            right: 30px;
+        }
+        .modal-content{;
+            margin: 15% auto;
+            width: 35vw;
+            padding: 20px;
+        }
+        .buttons a{
+            padding: 10px;
+            width: 200px;
+            font-size: 16px!important;
+        }
+
+        .modal-body{
+            padding: 1rem 3rem 0 3rem;
+        }
+        .form-group input{
+            padding: 25px;
+        }
+        .f-got a{
+            //margin-left: 290px;
+        }
+        .reg a{
+
+        }
+    }
+}

@@ -1,0 +1,400 @@
+#recruiterAfterLogin{
+    margin: 30px 20px 20px 15px;
+}
+
+#recruiterAfterLogin h6{
+    font-size: 16px;
+    color: #333333;
+    font-weight: 500;
+}
+#recruiterAfterLogin section{
+    position: relative;
+}
+
+#recruiterAfterLogin .user-profile-cards{
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #DDDDDD;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+#recruiterAfterLogin .cards{
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #DDDDDD;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+#recruiterAfterLogin .arrowD{
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    font-size: 20px;
+    color: #999;
+}
+
+#recruiterAfterLogin .userImg{
+    padding: 0.5rem;
+    float: left;
+    width: 50px;
+
+}
+#recruiterAfterLogin .userImg img{
+    width: 100%;
+}
+#recruiterAfterLogin .user_section p{
+    color: #666;
+    font-size: 12px;
+}
+
+#recruiterAfterLogin .btn-div .follow-btn{
+    display: inline-block;
+    color: #fff;
+    background-color: #E33D47;
+    border-radius: 5px;
+    text-align: center;
+    width: 100px;
+    padding: 5px;
+    font-weight: 500;
+}
+#recruiterAfterLogin .btn-div .btn-resume{
+    padding: 10px 0 0 45px;
+}
+#recruiterAfterLogin .btn-div .btn-resume{
+    color: #E33D47;
+    width: 110px;
+    padding: 4px;
+    font-weight: 500;
+}
+
+#recruiterAfterLogin .hiring span{
+    color: #333;
+}
+
+#recruiterAfterLogin .hiring p,
+#recruiterAfterLogin .hiring span{
+    font-size: 10px;
+    text-align: justify;
+    line-height: 24px;
+}
+#recruiterAfterLogin .hiring p{
+    font-weight: normal;
+    padding-top: 5px;
+
+}
+#recruiterAfterLogin .hiring-items{
+    display: flex;
+}
+#recruiterAfterLogin .hiring .key-skill li{
+    background-color: #ECF3FF;
+    color: #2979FF;
+    border-radius: 50px;
+    font-size: 9px;
+    padding: 2px 5px;
+    margin: 5px;
+}
+#recruiterAfterLogin .work-exp1 h6,
+#recruiterAfterLogin .user-profile-items h6{
+    font-size: 14px;
+    font-weight: 500;
+}
+#recruiterAfterLogin .work-exp h6,
+#recruiterAfterLogin .hiring h6{
+    margin-bottom: 2px;
+}
+
+#recruiterAfterLogin .work-exp1 p,
+#recruiterAfterLogin .work-exp1 h6{
+    font-size: 14px;
+    width: 100%;
+    line-height: 24px;
+}
+#recruiterAfterLogin .exp-dot{
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    vertical-align: middle;
+    background-color: #ccc;
+    border-radius: 50px;
+}
+
+#recruiterAfterLogin .edu-table div{
+    margin-bottom: 10px;
+}
+#recruiterAfterLogin .skills-table p:first-child{
+    font-weight: 600;
+}
+
+#recruiterAfterLogin .user-profile-list{
+    padding-top: 15px;
+}
+#recruiterAfterLogin .user-profile-items{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding-bottom: 10px;
+}
+#recruiterAfterLogin .user-profile-items h6{
+    font-size: 12px;
+    padding-left: 20px;
+}
+#recruiterAfterLogin .user-profile-items p{
+    font-size: 0.8rem;
+}
+
+
+/* Medium Screen*/
+@media screen and (min-width: 600px){
+    #recruiterAfterLogin .recruiter-profile{
+        display: flex;
+    }
+    #recruiterAfterLogin .user-profile-cards{
+        background-color: transparent;
+        border: 0;
+        margin: 0;
+        padding: 0;
+    }
+    #recruiterAfterLogin .user_section{
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        background-color: #FFF;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+    #recruiterAfterLogin .userImg{
+        width: 100px;
+
+    }
+    #recruiterAfterLogin .user-profile-cards .userImg img{
+        width: 4rem;
+    }
+
+
+    #recruiterAfterLogin .user-profile-cards .user-text{
+        padding: 8px;
+    }
+    #recruiterAfterLogin .user_section h6{
+        font-size: 14px;
+    }
+
+    #recruiterAfterLogin .user_section p{
+        font-size: 12px;
+    }
+
+    #recruiterAfterLogin .btn-div {
+        padding: 5px 20px;
+        word-spacing: 5px;
+    }
+    #recruiterAfterLogin .btn-div p{
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 15px;
+    }
+
+    #recruiterAfterLogin .btn-div .follow-btn,
+    #recruiterAfterLogin .btn-div .btn-resume{
+        font-size: 16px;
+        margin-right: 15px;
+    }
+    #recruiterAfterLogin .btn-div .follow-btn{
+        width: 100px;
+        padding: 5px;
+    }
+    #recruiterAfterLogin .btn-div .btn-resume{
+        padding: 62px 0 0 0;
+    }
+    #recruiterAfterLogin .user_section .user-details{
+        padding: 20px;
+    }
+
+    #recruiterAfterLogin .user_section .send-msg{
+        width: 155px;
+    }
+    #recruiterAfterLogin .user_section span{
+        font-size: 12px;
+    }
+
+    #recruiterAfterLogin .hiring span{
+        font-size: 14px;
+        color: #000;
+    }
+
+    #recruiterAfterLogin .hiring .hiring-items {
+        display: grid;
+        grid-template-columns: 130px 250px;
+        padding-bottom: 15px;
+    }
+    #recruiterAfterLogin .hiring-items p {
+        font-size: 14px;
+        width: max-content;
+    }
+    #recruiterAfterLogin .hiring .key-skill li{
+        font-size: 14px;
+        padding: 3px 10px;
+        line-height: 24px;
+        margin-top: 5px;
+    }
+    #recruiterAfterLogin .work-exp1{
+        display: block;
+        padding-top: 15px;
+    }
+    #recruiterAfterLogin .work-exp1 p{
+        font-size: 14px;
+        color: #999;
+    }
+
+    #recruiterAfterLogin .arrowD {
+        top: 10px;
+    }
+
+    #recruiterAfterLogin .user-profile-items p,
+    #recruiterAfterLogin .user-profile-items h6{
+        font-size: 16px;
+        padding: 0 0 10px 0;
+    }
+}
+
+/* LARGE SCREEN */
+@media (min-width: 769px) {
+    #recruiterAfterLogin .recruiter-profile{
+        display: flex;
+    }
+    #recruiterAfterLogin .user_section{
+        display: grid;
+        position: relative;
+        grid-template-columns: repeat(4, auto);
+        grid-gap: 50px;
+        background-color: #FFF;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+    #recruiterAfterLogin .user-profile-cards{
+        background-color: transparent;
+        border: 0;
+        margin: 0;
+        padding: 0;
+    }
+    #recruiterAfterLogin .cards{
+        padding: 1.5rem;
+    }
+
+    #recruiterAfterLogin .arrowD {
+        right: 35px;
+        top: 20px;
+    }
+    #recruiterAfterLogin  .userImg {
+        width: 150px;
+        padding: 0;
+    }
+
+    #recruiterAfterLogin .btn-div {
+        padding: 5px 20px;
+        word-spacing: 5px;
+    }
+    #recruiterAfterLogin .btn-div p{
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 15px;
+    }
+
+    #recruiterAfterLogin .user-profile-cards .user-text{
+        padding: 10px;
+    }
+    #recruiterAfterLogin .user_section h6{
+        font-size: 20px;
+    }
+    #recruiterAfterLogin .user_section .send-msg {
+        width: 100%;
+    }
+
+    #recruiterAfterLogin .user_section p,
+    #recruiterAfterLogin .user_section span{
+        font-size: 16px;
+        padding-top: 10px;
+    }
+
+    #recruiterAfterLogin .btn-div .follow-btn,
+    #recruiterAfterLogin .btn-div .btn-resume{
+        font-size: 16px;
+    }
+
+    #recruiterAfterLogin .btn-div .follow-btn{
+        margin-right: 15px;
+        width: 130px;
+        padding: 8px 5px;
+    }
+    #recruiterAfterLogin .btn-div .btn-resume{
+        padding: 1.3rem 0 0 0;
+    }
+    #recruiterAfterLogin .user-profile-cards .send_btn a{
+        width: 130px;
+        border: 0;
+        font-weight: 600;
+        color: #E33D47;
+        padding: 8px 0;
+    }
+
+    #recruiterAfterLogin .user_section .user-details{
+        padding-top: 40px;
+    }
+
+
+    #recruiterAfterLogin .hiring .hiring-items {
+        display: grid;
+        grid-template-columns: 130px 520px;
+        padding-bottom: 15px;
+    }
+    #recruiterAfterLogin .hiring p{
+        padding-top: 10px;
+    }
+    #recruiterAfterLogin .hiring .key-skill li{
+        font-size: 14px;
+        padding: 3px 10px;
+    }
+
+    #recruiterAfterLogin .hiring p,
+    #recruiterAfterLogin .hiring .hiring-items span{
+        font-size: 14px;
+        line-height: 24px;
+
+    }
+
+    #recruiterAfterLogin .card-heads{
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    #recruiterAfterLogin .current h6{
+        width: 20rem;
+    }
+    #recruiterAfterLogin  .work-exp1{
+        display: block;
+    }
+
+    #recruiterAfterLogin  .work-exp1 p{
+        font-size: 14px;
+        color: #999;
+    }
+    #recruiterAfterLogin  .work-exp1 h6{
+        font-size: 16px;
+        color: #333;
+    }
+
+    #recruiterAfterLogin .user_profile .edit-wrapper span{
+        padding-right: 5px;
+    }
+
+    #recruiterAfterLogin .user-profile-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding-top: 1.5rem;
+    }
+    #recruiterAfterLogin .user-profile-items {
+        display: block;
+        width: 18rem;
+    }
+    #recruiterAfterLogin .user-profile-items p,
+    #recruiterAfterLogin .user-profile-items h6{
+        font-size: 16px;
+        padding: 0 0 10px 0;
+    }
+}

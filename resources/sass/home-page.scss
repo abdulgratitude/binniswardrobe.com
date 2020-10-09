@@ -1,0 +1,194 @@
+#home-page-container {
+
+    .home-page-bg {
+        background: url("/images/home-page/home-bg.png") no-repeat center / cover;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .home-page-content-height {
+        height: 100% - 11%;
+    }
+
+    .list-image {
+        li {
+            margin: 1rem 0 0;
+            padding: 0 0 0 2rem;
+            background: url("/images/check-mark.png") no-repeat left center / 15px;
+        }
+    }
+
+    .get-started-bg {
+        background: url("/images/home-page/get-started.png") no-repeat center / cover;
+    }
+
+
+
+    @media (max-width: 699px) {
+        .home-page-right-sm {
+            padding-top: 1.25rem;
+            padding-bottom: 1.25rem;
+            text-align: right;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .col-order-img {
+            order: 0;
+        }
+
+        .col-order-content {
+            order: 1;
+        }
+    }
+
+
+
+    .title-text-wrap .br {
+        display: block;
+    }
+
+
+    .title-header {
+        font-size: 64px;
+        font-weight: 600;
+        color: #000;
+        margin-top: 10%;
+        line-height: 68px;
+    }
+
+    .title-paragraph {
+        color: #000;
+        margin: 14px 0;
+        font-size: 18px;
+    }
+
+
+    .testimonials_carousel .carousel-item .avatar {
+        width: 50%;
+        border-radius: 50%;
+        margin-bottom: 16px;
+    }
+
+    .testimonials_carousel .carousel-item .name,
+    .testimonials_carousel .carousel-item .country {
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    .testimonials_carousel .carousel-item .country {
+        font-style: italic;
+    }
+
+
+    .testimonials_carousel p {
+        margin: 0;
+    }
+
+    .testimonials {
+        background: rgba(0, 0, 0, 0.03);
+        padding: 7%;
+    }
+
+    .main-title{
+        position: relative;
+        text-transform: capitalize;
+    }
+
+    .main-title::after{
+        content: '';
+        width: 60px;
+        height: 8px;
+        background: #79d779;
+        position: absolute;
+        bottom: -10px;
+        left: 2px;
+
+    }
+
+    #jobsBtn1{
+        display: inline-block;
+    }
+
+
+    #jobsBtn2{
+    display: none;
+    }
+
+
+
+
+    @media (max-width: 1024px) {
+
+        #jobsBtn1{
+
+            display: none;
+        }
+
+
+        #jobsBtn2{
+            display: inline-block;
+        }
+
+
+        .home-page-bg {
+                background: none;
+                height: auto;
+                max-height: 100vh;
+                text-align: center;
+            }
+
+
+
+            .title-text-wrap {
+            padding: 20px;
+            margin-bottom: 40px;
+        }
+
+        .title-header {
+            font-size: 42px;
+            font-weight: 600;
+            color: #000;
+            margin-top: 10%;
+            line-height: 46px;
+            text-shadow: 0 0 20px white;
+        }
+
+    .title-paragraph{
+        text-shadow: 0 0 8px white;
+    }
+
+
+    }
+
+
+    @media (max-width: 767px) {
+
+        .title-text-wrap {
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+
+            .home-page-bg {
+                height: 100vh;
+                width: 100vw;
+            }
+
+        .main-title::after {
+            left: 50% !important;
+            transform: translateX(-50%) !important;
+        }
+
+        .features .image-section{
+            width: 100%;
+        }
+
+
+
+    }
+
+
+
+
+}
