@@ -42,7 +42,6 @@
         }
     }
 </style>
-<div id="ticker-notification-marquee"><span></span></div>
 <div class="app-loader"></div>
 @yield('sidebar') @hasSection('sidebar')
     <div id="main" class="h-100">

@@ -6,7 +6,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Continental extends Model
 {
-    protected $table = "core_continent_master";
+    protected $table = 'core_continent_master';
+    protected $primaryKey = 'continent_code';
+    public $incrementing = false;
+
+    const CREATED_AT = 'created_date';
+    const UPDATED_AT = 'modified_date';
 
     protected $fillable = [
         'continent_code',

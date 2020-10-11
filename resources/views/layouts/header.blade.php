@@ -1,49 +1,26 @@
-<section id="app-header" class="home-banner">
-    <div class=" top-header ">
-        <div class="nav-top">
-            <div class="nav-top-left nav-list">
-                <ul>
-                    <li><a href="#">Jobs</a></li>
-                    <li><a href="#">search</a></li>
-                    <li><a href="#">my account</a></li>
-                    <li><a href="#">blog</a></li>
-                    <li><a href="#">interview tips</a></li>
-                </ul>
-            </div>
-            <div class="nav-top-right nav-list">
-                <ul>
-                    <li><a>support@myglit.com</a></li>
-                    <li><a>Contact Us</a></li>
-                    <li><a>INDIA</a></li>
-                </ul>
-            </div>
-        </div>
+<nav id="nav-bar" class="navbar b-header shadow-sm mb-3">
+    <div class="d-flex  align-items-center navbar-brand">
+        <i class="mdi mdi-menu b-sidebar-trigger cursor-pointer"></i>
 
-
+        <span class="px-1 page-name">
+            @yield('navbar-name')
+        </span>
     </div>
-    <nav class="navbar navbar-expand-lg  navbar-light bg-transparent">
-        <a class="navbar-brand" href="#">
-            <img src="{{ asset('images/logo.jpg') }}"  height="50" alt="" loading="lazy">
-        </a>
-{{--        <ul class="navbar-nav mr-auto">--}}
-{{--            <h6 class="m-0 text-dark border-left pl-3 py-1 text-uppercase nb-txt">--}}
-{{--                Recruitment intelligence with MyGLIT--}}
-{{--            </h6>--}}
-{{--        </ul>--}}
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="d-flex navbar-expand align-items-center">
 
-            <div class="ml-auto auth-right">
-                <div class="nav-action-wrapper">
+        <div class="notification-bell px-2 ">
+            <i class="mdi mdi-bell-outline cursor-pointer bell" id="notification-bell-toggle"></i>
+            <span class="badge badge-danger badge-pill bell-count"></span>
+            <div class="notifications shadow" id="notification-panel">
+                <div class="text-right m-1 border-bottom p-1 pb-2">
+                    <button class="btn badge badge-danger" onclick="markAllRead()">clear notifications</button>
+                </div>
+                <div id="notification-panel-show">
 
                 </div>
-                <a href="" class="btn btn-primary text-uppercase ml-2 nav-action">
-                    Employer Zone
-                </a>
+
             </div>
         </div>
-    </nav>
-</section>
+    </div>
+</nav>

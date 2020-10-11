@@ -7,6 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 class Country extends Model
 {
     protected $table = "core_country_master";
+    protected $primaryKey = 'country_code';
+    public $incrementing = false;
+
+    const CREATED_AT = 'created_date';
+    const UPDATED_AT = 'modified_date';
 
     protected $fillable = [
         'country_code',

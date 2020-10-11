@@ -18,8 +18,15 @@ Route::get('/', function () {
 });
 
 Route::prefix('master')->as('master.')->group(function () {
-    //creating and getting locality
-    Route::get('continental', 'users\master\LocalityController@getContinental')->name('continental');
+    Route::prefix('continental')->as('continental.')->group(function () {
+        Route::get('/', 'users\master\ContinentalController@index')->name('home');
+        Route::post('show', 'users\master\ContinentalController@show')->name('show');
+        Route::post('store', 'users\master\ContinentalController@store')->name('store');
+        Route::post('edit', 'users\master\ContinentalController@edit')->name('edit');
+        Route::post('update', 'users\master\ContinentalController@update')->name('update');
+    });
+
+
     Route::get('countries', 'users\master\LocalityController@getCountries')->name('countries');
     Route::get('states', 'users\master\LocalityController@getStates')->name('states');
     Route::get('cities', 'users\master\LocalityController@getCities')->name('cities');
@@ -42,3 +49,7 @@ Route::prefix('select-options')->as('selectOptions.')->group(function () {
     Route::post('/gtbc', 'SelectOptionsController@getTownByCity')->name('getTownByCity');
     Route::post('/gjrbf', 'SelectOptionsController@getJobRoleByFunction')->name('getJobRoleByFunction');
 });
+
+Auth::routes();
+
+Route::get('/dashboard', 'DashboardController@index')->name('dashboard');

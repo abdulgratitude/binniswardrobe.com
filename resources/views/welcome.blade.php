@@ -23,13 +23,13 @@
         Launch demo modal
     </button>
 
-    <a href="http://127.0.0.1:8000/master/continental"><button type="button" class="btn btn-primary float-right">Continental</button></a>
+    <a href="{{route('login')}}"><button type="button" class="btn btn-primary float-right">Login</button></a>
     <!-- Modal -->
     @component('layouts.components.modal', [
     'id' => 'createContinentalModal',
     'size'=>'model-sm',
     'title' => 'Create Continent',
-    'body' => 'locality.create_continental',
+    'body' => 'modal_body',
     'submitBtn' => 'Create',
     'closeBtn' => 'Close',
     'footer'=> 'true'
