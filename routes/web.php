@@ -26,21 +26,13 @@ Route::prefix('master')->as('master.')->group(function () {
         Route::post('update', 'users\master\ContinentalController@update')->name('update');
     });
 
-
-    Route::get('countries', 'users\master\LocalityController@getCountries')->name('countries');
-    Route::get('states', 'users\master\LocalityController@getStates')->name('states');
-    Route::get('cities', 'users\master\LocalityController@getCities')->name('cities');
-    Route::get('towns', 'users\master\LocalityController@getTowns')->name('towns');
-    Route::post('create-continental', 'users\master\LocalityController@createContinental')->name('create.continental');
-    Route::post('create-country', 'users\master\LocalityController@createCountry')->name('create.country');
-    Route::post('create-state', 'users\master\LocalityController@createState')->name('create.state');
-    Route::post('create-city', 'users\master\LocalityController@createCity')->name('create.city');
-    Route::post('create-town', 'users\master\LocalityController@createTown')->name('create.town');
-    Route::post('update-continental', 'users\master\LocalityController@updateContinental')->name('update.continental');
-    Route::post('update-country', 'users\master\LocalityController@updateCountry')->name('update.country');
-    Route::post('update-state', 'users\master\LocalityController@updateState')->name('update.state');
-    Route::post('update-city', 'users\master\LocalityController@updateCity')->name('update.city');
-    Route::post('update-town', 'users\master\LocalityController@updateTown')->name('update.town');
+    Route::prefix('country')->as('country.')->group(function () {
+        Route::get('/', 'users\master\CountryController@index')->name('home');
+        Route::post('show', 'users\master\CountryController@show')->name('show');
+        Route::post('store', 'users\master\CountryController@store')->name('store');
+        Route::post('edit', 'users\master\CountryController@edit')->name('edit');
+        Route::post('update', 'users\master\CountryController@update')->name('update');
+    });
 });
 
 Route::prefix('select-options')->as('selectOptions.')->group(function () {

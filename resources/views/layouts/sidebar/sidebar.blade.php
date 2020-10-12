@@ -36,8 +36,8 @@
                     <i class="mdi mdi-map-marker mdi-18px pr-3 "></i>
                     <span>Continental</span>
                 </a>
-                <a href="{{route('master.continental.home')}}"
-                   class="d-flex align-items-center href-item @if(Request::url() === route('master.continental.home'))sidebar-active font-weight-bold text-primary @endif">
+                <a href="{{route('master.country.home')}}"
+                   class="d-flex align-items-center href-item @if(Request::url() === route('master.country.home'))sidebar-active font-weight-bold text-primary @endif">
                     <i class="mdi mdi-map-marker mdi-18px pr-3 "></i>
                     <span>Country</span>
                 </a>
@@ -60,7 +60,7 @@
         <div class="d-flex border-top href-item">
             <div class="px-3">
                 <span class="d-block font-size-16">
-                  Copyright © 2020 MyGlit. All Rights Reserved.
+                  Copyright © 2020 N. All Rights Reserved.
                 </span>
                 <button class="btn btn-outline-secondary btn-sm badge-pill px-3 mt-2" disabled>Beta</button>
             </div>
