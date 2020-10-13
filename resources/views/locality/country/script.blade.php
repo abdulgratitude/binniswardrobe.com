@@ -3,7 +3,6 @@
     show('form#filterForm');
 
     function show(data) {
-
         let form = $('#filterForm');
 
         let url = form.attr('action');
@@ -48,13 +47,13 @@
                                   <div class="card-header" id="headingOne">
                                   <div>
                                         <span class="cursor-pointer"  aria-expanded="false" >
-                                            ${valueOfElement.continent_name}
+                                            ${valueOfElement.country_name}
                                         </span>
                                          <span class="cursor-pointer badge badge-info"  aria-expanded="false" >
-                                          ${valueOfElement.continent_code}
+                                          ${valueOfElement.country_code}
                                         </span>
                                       <div class="float-right" >
-                                            <span class="mdi mdi-circle-edit-outline align-middle  cursor-pointer edit" title="Edit" data-toggle="modal" data-target="#editContinentalModal" onclick="editContinent('${indexInArray}','${valueOfElement.continent_code}')"></span>
+                                            <span class="mdi mdi-circle-edit-outline align-middle  cursor-pointer edit" title="Edit" data-toggle="modal" data-target="#editCountryModal" onclick="editCountry('${indexInArray}','${valueOfElement.country_code}')"></span>
                                       </div>
                                   </h5>
                                   </div>
@@ -72,19 +71,19 @@
     }
 
 
-    $('#createContinentalForm').on('submit', function (e) {
+    $('#createCountryForm').on('submit', function (e) {
         e.preventDefault();
         let form = $(this);
         let url = form.attr('action');
         let data = $(this).serialize();
-        loaderBtn(true, '#CreateContinental');
+        loaderBtn(true, '#CreateCountry');
         axios.post(url, data)
             .then(function (response) {
-                loaderBtn(false, '#CreateContinental');
+                loaderBtn(false, '#CreateCountry');
                 if (response.data.status == true) {
                     toastr.success(response.data.message);
                     show('form#filterForm');
-                    $('#createContinentalModal').modal('hide');
+                    $('#createCountryModal').modal('hide');
                 }
                 if(response.data.error) {
                   toastr.error(response.data.error)
@@ -99,27 +98,46 @@
             });
     });
 
-    function editContinent(element_id, continent_code){
+    function editCountry(element_id, country_code){
         loader(true);
-        let url = '{{route('master.continental.edit')}}';
+        let url = '{{route('master.country.edit')}}';
         let data = {
-            continent_code: continent_code,
+            country_code: country_code,
         };
         axios.post(url, data)
             .then(function (response) {
                 loader(false);
-                $('#editContinentalForm')[0].reset();
+                $('#editCountryForm')[0].reset();
                 if (response.data.status == true) {
                     let userData = response.data.data;
-                    $('#edit_old_continent_code').val(continent_code);
-                    $('#edit_continent_code').val(userData.continent_code);
-                    $('#edit_continent_name').val(userData.continent_name);
-                    $('#edit_continent_description').val(userData.continent_description);
+                    $('#edit_old_country_code').val(country_code);
+                    $('#edit_country_code').val(userData.country_code);
+                    $('#edit_country_name').val(userData.country_name);
+                    $('#edit_country_description').val(userData.country_description);
+                    $('#edit_default_currency_code').html(userData.currencySelectPicker);
+                    $('#edit_continent_code').html(userData.continentSelectPicker);
+                    $('#edit_country_code_iso3').val(userData.country_code_iso3);
+                    $('#edit_country_prefix').val(userData.country_prefix);
+
+
+                    $('.selectpicker').selectpicker('refresh');
 
                     if (userData.is_active == 1) {
-                        $('#edit_continent_is_active_true').prop('checked', true);
+                        $('#edit_country_is_active_true').prop('checked', true);
                     }else{
-                        $('#edit_continent_is_active_false').prop('checked', true);
+                        $('#edit_country_is_active_false').prop('checked', true);
+                    }
+
+                    if (userData.shipping_enabled == 1) {
+                        $('#edit_shipping_enabled_true').prop('checked', true);
+                    }else{
+                        $('#edit_shipping_enabled_false').prop('checked', true);
+                    }
+
+                    if (userData.check_pincode_delivery_serviceable == 1) {
+                        $('#edit_check_pincode_delivery_serviceable_true').prop('checked', true);
+                    }else{
+                        $('#edit_check_pincode_delivery_serviceable_false').prop('checked', true);
                     }
                 }
             })
@@ -128,18 +146,18 @@
             })
     }
 
-    $('#editContinentalForm').on('submit', function (e) {
+    $('#editCountryForm').on('submit', function (e) {
         e.preventDefault();
         let form = $(this);
         let url = form.attr('action');
         let data = $(this).serialize();
-        loaderBtn(true, '#editContinental');
+        loaderBtn(true, '#editCountry');
         axios.post(url, data)
             .then(function (response) {
-                loaderBtn(false, '#editContinental');
+                loaderBtn(false, '#editCountry');
                 if (response.data.status == true) {
                     toastr.success(response.data.message);
-                    $('#editContinentalModal').modal('hide');
+                    $('#editCountryModal').modal('hide');
                     show('form#filterForm');
                 }
                 if(response.data.error) {

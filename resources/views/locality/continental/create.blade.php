@@ -24,11 +24,11 @@
         <label class="" for="">Active Status</label>
     </div>
     <div class="form-check form-check-inline pl-2">
-        <input class="form-check-input" type="radio" name="is_active" id="create_continent_is_active_true" value="1" checked>
+        <input class="form-check-input" type="radio" name="is_active" id="create_continent_is_active_true" value="1" checked onclick="$('#create_continent_is_active_true').val(1)">
         <label class="form-check-label" for="create_continent_is_active_true">Yes</label>
     </div>
     <div class="form-check form-check-inline pl-2">
-        <input class="form-check-input" type="radio" name="is_active" id="create_continent_is_active_false" value="0">
+        <input class="form-check-input" type="radio" name="is_active" id="create_continent_is_active_false" value="0" onclick="$('#create_continent_is_active_false').val(0)">
         <label class="form-check-label" for="create_continent_is_active_false">No</label>
     </div>
 </div>
